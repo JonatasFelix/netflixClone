@@ -1,0 +1,97 @@
+/* GERAL */
+
+
+/* DESATIVAR BARRA DE ROLAGEM SLIDER */
+
+#scrow::-webkit-scrollbar {
+    width: 0;
+    display: none;  /* Safari e Chrome */
+}
+
+#scrow {
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+
+/* BOTÕES DE PROXIMO E VOLTAR SLIDER */
+
+.series-container .avancar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    transform: translatey(-50%);
+    top: 54%;
+    left: 99%;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    height: 140px;
+}
+
+.series-container .voltar {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    transform: translatey(-50%);
+    top: 59%;
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    height: 140px;
+}
+
+
+
+
+
+
+.series-container .voltar:hover , .series-container .avancar:hover {
+    background: rgba(20,20,20,.5);
+}
+
+.series-container .voltar img, .series-container .avancar img {
+    max-width: 50%;
+}
+
+
+@media (max-width: 1210px) {
+    .series-container .avancar {
+        left: 97%;
+    }
+}
+
+@media (max-width: 895px) {
+    .series-container .avancar {
+        left: 95%;
+    }
+}
+
+@media (max-width: 720px) {
+    .series-container .avancar {
+        left: 93%;
+    }
+}
+
+@media (max-width: 570px) {
+    .series-container .avancar {
+        left: 90%;
+    }
+}
+
+@media (max-width: 460px) {
+    .series-container .avancar {
+        left: 88%;
+    }
+}
+
+@media (max-width: 380px) {
+    .series-container .avancar {
+        left: 83%;
+    }
+}

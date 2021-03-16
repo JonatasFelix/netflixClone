@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/netflix-icon.ico">
+    <link rel="stylesheet" type="text/css" href="./css/login.css">
+    <title>Projeto Netflix - Login</title>
+</head>
+<body>
+
+<!-- LOGO   -->
+    <header>
+        <div class="logo">
+            <a href="./br.html"><img src="./img/login-page/logo.png" alt="JonFlix"></a>
+        </div>
+    </header>
+
+<!-- CONTEUDO PRINCIPAL -->
+    <main>
+        <div class="login-container">
+            <!-- TITULO -->
+            <h1>Entrar</h1>
+
+            <!-- FORMULARIO DE LOGIN -->
+            <form action="./profile.html" class="login-form">
+                <input type="email" placeholder="Email ou número de telefone" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+
+            <!-- LEMBRAR SENHA E AJUDA -->
+            <div class="login-infos">
+                <div class="lembrar">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Lembre-se de mim</label>
+                </div>
+
+                <div class="ajuda">
+                    <a href="#">Precisa de ajuda?</a>
+                </div>
+            </div>
+
+            <!-- LOGIN FACEBOOK -->
+            <div class="fcb-new">
+                <div class="fcb">
+                    <a href="https://facebook.com" target="_blank"><img src="./img/login-page/facebook-icon.png" alt="Logar com facebook">Conectar com Facebook</a>
+                </div>
+
+                <div class="new">
+                    <p>Novo por aqui? <a href="./br.html">Assine Agora</a>.</p>
+                </div>
+            </div>
+
+
+            <!-- GOOGLE CAPTCHA -->
+            <div class="captcha">
+                <div class="captcha-container">
+                    <div class="captcha-btn">
+                        Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô.
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbox">Saiba mais.</label>
+
+                        <div class="regras">
+                            <p>As informações recolhidas pelo Google reCAPTCHA estão sujeitas à <a href="#">Política de Privacidade</a> e <a href="#">Termos de Uso</a>, e são usadas para oferecer, manter e melhorar o serviço reCAPTCHA e por questões de segurança (não são usadas para exibir anúncios personalizados pelo Google).</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<!-- RODAPE  -->
+
+    <footer>
+        <!-- NAV DE DUVIDAS -->
+        <div class="footer-container">
+            <ul class="footer-duvidas">
+                <h4>Dúvidas? <a href="tel:+000000000">Ligue 0800-000-0000</a></h4>
+                <li><a href="#">Perguntas frequentes</a></li>
+                <li><a href="#">Centro de ajuda</a></li>
+                <li><a href="#">Termos de uso</a></li>
+                <li><a href="#">Privacidade</a></li>
+                <li><a href="#">Preferências de cookies</a></li>
+                <li><a href="#">Informações corporativas</a></li>
+            </ul>
+
+    <!-- SELEÇÃO DE LINGUAGEM -->
+            <div class="lang-btn"> 
+                <form action="" class="lang">
+                        <select>
+                                <option value="pt-bt">Português</option>
+                                <option value="eng">English</option>
+                        </select>
+                </form>
+    </footer>
+
+
+
+</body>
+</html>

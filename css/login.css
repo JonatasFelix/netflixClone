@@ -1,0 +1,338 @@
+@font-face {
+    font-family: NetFlixSans;
+    src: url(../font/NetflixSans.woff2);
+}
+
+
+* {
+    font-family: "NetFlixSans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#check {
+    display: none;
+}
+
+.regras p {
+    opacity: 0;
+    transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: hidden;
+}
+
+/* INICIO */
+
+body {
+    background: black no-repeat;
+    background-image: linear-gradient(to top,rgb(0 0 0 / 50%) 0,rgb(0 0 0 / 42%) 60%,rgb(0 0 0 / 65%) 100%), url(../img/login-page/bg.jpg);
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.logo {
+    margin-left: 3%;
+}
+
+.logo img {
+    max-width: 167px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh;
+}
+
+.login-container {
+    width: 450px;
+    max-height: 660px;
+    padding: 50px 68px 50px;
+    margin-bottom: 90px;
+    border-radius: 4px;
+    background: rgba(0,0,0,.75);
+}
+
+.login-container h1 {
+    color: white;
+    margin-bottom: 28px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.login-form input {
+    color: black;
+    font-size: 1em;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    padding: 15px 16px;
+    border: 0;
+}
+
+
+.login-form input:focus {
+    color: white;
+    background: #333;
+}
+
+.login-form button {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 16px;
+    margin: 24px 0 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 0;
+    background: #e50914;
+}
+
+.login-infos {
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lembrar label{
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: -2px;
+}
+
+.ajuda a {
+    font-size: 13px;
+    color: #b3b3b3;
+}
+
+
+.fcb-new {
+    margin-top: 60px;
+}
+
+.fcb, .new, .captcha {
+    margin-bottom: 16px;
+}
+
+.fcb img {
+    margin-right: 10px;
+    max-width: 20px;
+}
+
+.fcb a {
+    color: #737373;
+    font-size: 13px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.new p {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.new p a {
+    color: white;
+}
+
+.new p a:hover {
+    text-decoration: underline;
+}
+
+.captcha-btn {
+    color: #8c8c8c;
+    font-size: 13px;
+    line-height: 15px;
+    display: inline-block;
+}
+
+.checkbox {
+    color: #0071eb;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.checkbox:hover {
+    text-decoration: underline;
+}
+
+#check:checked ~ .checkbox {
+    display: none;
+}
+
+#check:checked ~ .regras p{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+.regras p {
+    color: #8c8c8c;
+    font-size: 13px;
+    margin-top: 16px;
+}
+
+.regras a {
+    color: #0071eb;
+}
+
+.regras a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* RODAPE */
+
+footer {
+    display: flex;
+    justify-content: center;
+    border-bottom: 10px solid #181818;
+    background: rgba(0,0,0,.75);
+}
+
+.footer-container {
+    padding: 30px 7% 40px;
+    width: 90%;
+}
+
+.footer-container a {
+    color: #757575;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-duvidas h4 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+
+.footer-duvidas li {
+    font-size: 13px;
+    padding-right: 12px;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 178px;
+    width: 24%;
+    vertical-align: middle;
+}
+
+.footer-duvidas li:nth-child(17) {
+    align-self: initial;
+}
+
+.footer-container .lang-btn .lang {
+    margin: 10px 0;
+}
+
+.footer-container .lang-btn .lang select {
+    color: #999;
+    font-size: 16px;
+    padding: 12px 8px 12px 29px;
+    border: 1px solid #333;
+    background: url(../img/mundo-13x13.png) no-repeat;
+    background-position: center left 11px;
+}
+
+.lang-btn .lang select option {
+    color: white;
+    background: #000;
+}
+
+
+
+/***************************************************** MEDIA *****************************************************/
+
+
+
+
+
+
+@media (max-width: 739px) {
+
+    body { 
+        background: black;
+        background-image: none;
+    }
+
+    main {
+        min-height: auto;
+    }
+
+    .login-container {
+        width: 100%;
+        padding: 20px 5%;
+        margin-bottom: 0;
+    }
+
+    .regras p {
+        visibility: visible;
+        display: none;
+    }
+
+    #check:checked ~ .regras p {
+        display: block;
+        opacity: 1;
+    }
+
+    footer {
+        border-top: 1px solid #e5e5e5;
+        border-bottom: none;
+    }
+
+    .footer-container {
+        padding: 30px 0 40px;
+    }
+
+    .footer-duvidas li {
+        min-width: 163px;
+    }
+
+}
+
+
+@media (max-width: 415px) {
+    .footer-duvidas li {
+        min-width: 145px;
+    }
+}
+
+@media (max-width: 319px) {
+    body {
+        min-width: 320px;
+    }
+}

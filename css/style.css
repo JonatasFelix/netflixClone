@@ -1,0 +1,1030 @@
+@font-face {
+    font-family: NetFlixSans;
+    src: url(../font/NetflixSans.woff2);
+}
+
+
+* {
+    font-family: "NetFlixSans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+#check1, #check2, #check3, #check4, #check5 {
+    display: none;
+}
+.primeiro, .segundo, .terceiro, .quarto, .quinto, .sexto {
+    display: none;
+}
+
+
+/* COMEÇO */
+
+/* header */
+
+header {
+    background: rgba(0,0,0,.4);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,.4) 60%,rgba(0,0,0,.8) 100%), url(../img/home-page/intro-bg.jfif);
+    background-size: cover;
+
+}
+
+.header {
+    height: 100px;
+    padding-top: 20px;
+    background-color: transparent;
+}
+
+.container-header {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 8px 55px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.logo img {
+    max-width: 135px;
+}
+
+.lang-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lang-btn .lang {
+    margin: 0 32px 0 12px;
+}
+
+.lang-btn .lang select {
+    color: white;
+    font-size: .90em;
+    padding: 8px 12px 8px 22px;
+    border-radius: 4px;
+    border: 1px solid white;
+    background: url(../img/mundo-13x13.png) no-repeat left;
+    background-position: left 7px center;
+}
+
+.lang-btn .lang select option {
+    color: white;
+    background: #7c7c7c;
+}
+
+.lang-btn .btn {
+    border-radius: 2px;
+    background-color: #e50914;
+}
+
+.lang-btn .btn a{
+    display: flex;
+    padding: 8px 15px;
+    line-height: 1.4em;
+    color: white;
+}
+
+/* Intro */
+
+.intro {
+    padding: 150px 0;
+}
+
+.intro-title h1{
+    color: white;
+    font-size: 3.25em;
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.intro-title p {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 16px 0;
+}
+
+.intro-info {
+    max-width: 670px;
+    margin: 0 auto;
+}
+
+.intro-info p {
+    color: white;
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 4% 20px;
+}
+
+.formulario {
+    display: flex;
+    padding: 0 10px;
+    max-width: 645px;
+    margin: 0 auto;
+}
+
+.formulario input {
+    font-size: 1.2em;
+    padding: 0 10px;
+    border-radius: 2px 0 0 4px;
+    border: solid 1px #8c8c8c;
+    flex: 3 1 455px;
+}
+
+.formulario button {
+    cursor: pointer;
+    color: white;
+    font-family: "NetFlixSans";
+    font-size: 1.7em;
+    padding: 15px 26px;
+    flex: 1 1 200px;
+    border: 0;
+    background-color: #e50914;
+}
+
+.formulario button:hover {
+    background: #f40612;
+}
+
+
+/* NA TV */
+
+.natv {
+    overflow: hidden;
+    border-top: 10px solid #222;
+    background-color: #000;
+}
+
+.natv-container {
+    max-width: 1800px;
+    padding: 57px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    background: #000;
+}
+
+.natv-descricao {
+    color: white;
+    flex: 1 1 300px;
+    max-width: 547px;
+    min-width: 415px;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.natv-descricao h1 {
+    font-size: 3.125em;
+    margin-bottom: 10px;
+}
+
+.natv-descricao p {
+    font-size: 1.625em;
+    line-height: 1.4;
+}
+
+.natv-img {
+    display: flex;
+    position: relative;
+    max-width: 570px;
+    flex: 1 1 381px;
+}
+
+.tv {
+    z-index: 5;
+    max-width: 100%;
+}
+
+.natv-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transform: translatex(-35%);
+    top: 20%;
+    left: 41%;
+}
+
+.natv-img-container img {
+    max-width: 127%;
+}
+
+/* OFF */
+
+.off {
+    color: white;
+    border-top: 10px solid #222;
+    background-color: black;
+
+}
+
+.off-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 57px 8% 57px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.off-txt {
+    color: white;
+    flex: 1 1 300px;
+    max-width: 555px;
+    min-width: 415px;
+    align-self: center;
+    margin: 0 20px;
+}
+
+.off-txt h1 {
+    font-size: 3.125em;
+    margin-bottom: 10px;
+}
+
+.off-txt p {
+    font-size: 1.625em;
+    line-height: 1.4;
+}
+
+.off-img {
+    height: 100%;
+    max-width: 504px;
+    display: flex;
+    flex: 1 1 410px;
+    position: relative;
+}
+
+
+.off-img img {
+    max-width: 100%;
+}
+
+.off-img-container {
+    border-radius: 4px;
+    border: 2px solid #404040;
+    background-color: black;
+    position: absolute;
+    transform: translatex(-50%);
+    left: 50%;
+    bottom: 5%;
+}
+
+.off-img-barra {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    max-width: 500px;
+    min-width: 300px;
+    height: 75px;
+}
+
+.off-img-barra-img {
+    max-width: 40px;
+}
+
+.off-img-barra-after {
+    display: flex;
+}
+
+.off-img-barra-texto {
+    margin-left: 10px;
+    max-width: 200px;
+}
+
+.off-img-barra-texto h4 {
+    margin: 0 0 0 10px;
+    font-size: .9em;
+}
+
+.off-img-barra-texto p {
+    color: #0071eb;
+    margin: 0 0 0 10px;
+    font-size: .8em;
+}
+
+
+.off-img-barra-after::after {
+    content: "";
+    width: 3em;
+    background: url(../img/home-page/download-icon.gif) no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: block;
+}
+
+
+
+/* MOBILE */
+
+
+.mobile {
+    color: white;
+    border-top: 10px solid #222;
+    background-color: black;
+
+}
+
+.mobile-container {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 57px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mobile-txt {
+    color: white;
+    flex: 1 1 300px;
+    max-width: 555px;
+    min-width: 415px;
+    align-self: center;
+    margin: 0 auto;
+}
+
+.mobile-txt h1 {
+    font-size: 3.125em;
+    margin-bottom: 10px;
+}
+
+.mobile-txt p {
+    font-size: 1.625em;
+    line-height: 1.4;
+}
+
+.mobile-img {
+    height: 100%;
+    max-width: 504px;
+    margin: auto;
+    display: flex;
+    flex: 1 1 381px;
+    position: relative;
+}
+
+
+.mobile-img img {
+    max-width: 100%;
+    z-index: 2;
+}
+
+.mobile-img-container {
+    position: absolute;
+    transform: translatex(-44%);
+    left: 42%;
+    bottom: 42%;
+}
+
+.mobile-img-barra {
+    display: flex;
+    align-items: center;
+    max-width: 553px;
+
+}
+
+.mobile-img-barra img {
+    max-width: 111%;
+    z-index: 1;
+}
+
+
+
+/* PERGUNTAS */
+
+.perguntas {
+    color: white;
+    border-top: 10px solid #222;
+    background-color: black;
+}
+
+.perguntas-container {
+    margin: 0 auto;
+    padding: 57px 10%;
+}
+
+.perguntas-container h1 {
+    color: white;
+    font-size: 3.125em;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.duvidas {
+    margin: 52px auto;
+    width: 70%;
+}
+
+.perguntas-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.perguntas-titulo h2 {
+    font-size: 1.625em;
+    font-weight: normal;
+}
+
+.perguntas-resposta {
+    padding: 2.2em;
+    margin-bottom: 10px;
+    background: #303030;
+}
+
+.perguntas-resposta p {
+    font-size: 1.6em;
+}
+
+.checkbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    margin-bottom: 2px;
+    padding: 20px 30px;
+    background: #303030;
+    cursor: pointer;
+}
+
+.checkbox span {
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.checkbox span::before {
+    content: "";
+    width: 25px;
+    height: 3px;
+    display: block;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+#check1:checked ~ .checkbox span, #check2:checked ~ .checkbox span, #check3:checked ~ .checkbox span, #check4:checked ~ .checkbox span, #check5:checked ~ .checkbox span {
+    transform: rotate(45deg);
+}
+
+#check1:checked ~ .primeiro, #check2:checked ~ .segundo, #check3:checked ~ .terceiro, #check4:checked ~ .quarto, #check5:checked ~ .quinto {
+    display: block;
+}
+
+
+/* RODAPE */
+
+
+
+footer {
+    background: black;
+}
+
+.footer-container {
+    padding: 55px 20% 33px;
+    border-top: 10px solid #222;
+}
+
+.footer-container a {
+    color: #757575;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+.footer-duvidas h4 {
+    font-size: 1em;
+    font-weight: normal;
+    color: #757575;
+    margin-bottom: 30px;
+}
+
+.footer-duvidas li {
+    font-size: 13px;
+    padding-right: 12px;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 125px;
+    width: 24%;
+    vertical-align: middle;
+}
+
+.footer-duvidas li:nth-child(17) {
+    align-self: initial;
+}
+
+.footer-container .lang-btn .lang {
+    margin: 10px 0;
+}
+
+.footer-container .lang-btn .lang select {
+    color: #999;
+    font-size: 16px;
+    padding: 12px 18px 12px 25px;
+    border: 1px solid #333;
+}
+
+#direitos {
+    font-size: 13px;
+    margin: 24px 0 0;
+}
+
+
+ /************************************************ @MEDIA ************************************************/
+
+
+
+
+ @media (min-width: 995px) {
+    .intro-info p {
+        font-size: 1.2em;
+        padding: 0 0% 20px;
+    }
+ }
+
+
+
+@media (max-width: 1180px) {
+    .natv-descricao h1, .perguntas-container h1  {
+        font-size: 3em;
+    }
+
+    .natv-descricao p {
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+
+    /* OFF  */
+
+    .off-txt h1 {
+        font-size: 3em;
+    }
+
+    .off-txt p {
+        font-size: 1.2em;
+        line-height: 1.4;
+    }
+
+    /* mobile */
+
+    .mobile-txt h1 {
+        font-size: 3em;
+    }
+
+    .mobile-txt p {
+        font-size: 1.2em;
+    }
+
+}
+
+@media (max-width: 1090px) {
+
+    .footer-container {
+        padding: 55px 45px 33px;
+    }
+
+
+}
+
+
+
+@media (max-width: 994px) {
+
+    /* Topo */
+    .header {
+        height: 45px;
+        padding-top: 20px;
+    }
+
+    .logo img {
+        max-width: 108px;
+    }
+
+    .lang-btn .lang {
+        margin: 0 20px 0 12px;
+    }
+
+    .lang-btn .lang select {
+        font-size: .80em;
+        padding: 8px 7px 8px 21px;
+        border-radius: 4px;
+        background-position: left 6px center;
+        background-size: 12px;
+    }
+
+    .lang-btn .btn a {
+        font-size: 1em;
+    }
+
+
+
+    /* NewsLetter */
+        
+    .formulario {
+        flex-direction: column;
+    }
+
+    .formulario input {
+        width: 80%;
+        max-height: 60px;
+        font-size: 1.2em;
+        border-radius: 4px;
+        margin: 0 auto;
+    }
+
+    .formulario button {
+        display: flex;
+        align-items: center;
+        font-size: 1em;
+        max-width: 138px;
+        max-height: 47px;
+        padding: 15px 16px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+    }
+
+
+    /* NA TV */
+
+    .natv-container {
+        padding: 60px 45px;
+    }
+
+    .natv-descricao {
+        max-height: 145px;
+        min-width: 400px;
+        max-width: 100%;
+        flex: 1 1 380px;
+    }
+
+    .natv-descricao h1 {
+        font-size: 2.5em;
+        text-align: center;
+        max-width: 100%;
+        min-width: 200px;
+        margin-bottom: 8px;
+        
+    }
+
+    .natv-descricao p {
+        font-size: 1.1em;
+        text-align: center;
+        max-width: 100%;
+        min-width: 200px;
+        margin: 15px 0 5px;
+    }
+
+    .natv-img {
+        display: flex;
+        justify-content: center;
+        flex: 1 1 500px;
+        min-width: 400px;
+        margin-top: 30px;
+        margin: 5px auto;
+    }
+
+
+    /* OFF */
+
+    .off-container {
+        padding: 60px 5%;
+    }
+
+    .off-txt {
+        min-width: 200px;
+        max-width: 100%;
+        flex: 1 1 380px;
+        margin-bottom: 60px;
+    }
+
+    .off-txt h1 {
+        font-size: 2.5em;
+        text-align: center;
+        max-width: 100%;
+        min-width: 200px;
+        margin-bottom: 8px;
+        
+    }
+
+    .off-txt p {
+        font-size: 1.1em;
+        text-align: center;
+        max-width: 100%;
+        min-width: 200px;
+        margin: 15px 0 5px;
+    }
+
+    .off-img {
+        min-width: 475px;
+        margin: 0 auto;
+    }
+
+
+
+    /* MOBILE */
+
+    .mobile-txt h1 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .mobile-txt p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+
+    /* PERGUNTAS */
+
+    .duvidas {
+        width: 85%;
+    }
+
+
+    /* PERGUNTAS */
+
+    .perguntas-container h1 {
+        font-size: 2.5em;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .mobile-txt {
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (max-width: 860px) {
+
+    .perguntas-titulo h2 {
+        font-size: 1.2em;
+    }
+
+    .perguntas-resposta p {
+        font-size: 1.1em;
+        line-height: 1.4;
+    }
+
+    
+    .footer-container {
+        padding: 55px 45px 33px;
+    }
+
+    .footer-duvidas {
+        margin: 0 5%;
+    }
+
+    .footer-container .lang-btn .lang {
+        margin: 10px 5%;
+    }
+
+    #direitos {
+        margin: 24px 5% 0;
+    }
+
+}
+
+
+@media (max-width: 740px) {
+    .footer-duvidas li  {
+        width: 32%;
+    }
+}
+
+
+
+
+@media (max-width: 725px) { 
+    .intro {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .mobile-container {
+        padding: 57px 5%;
+    }
+
+    .duvidas {
+        width: 90%;
+    }
+
+    .perguntas-container {
+        padding: 57px 5%;
+    }
+
+}
+
+
+
+@media (max-width: 554px) { 
+
+    /* GERAL */
+
+    .natv-descricao h1, .off-txt h1, .mobile-txt h1, .perguntas-container h1  {
+        font-size: 1.625em;
+    }
+
+    .natv-descricao p, .off-txt p, .mobile-txt p {
+        font-size: 1.125em;
+        max-width: 460px;
+    }
+
+    .container-header {
+        padding: 8px 5% 0;
+    }
+
+    .logo img {
+        max-width: 89px;
+    }
+
+    .lang-btn .lang {
+        margin: 0 12px 0 5px;
+    }
+
+    .lang-btn .lang select {
+        padding: 5px 1px 5px 20px;
+        background-position: left 7px center;
+    }
+
+    .lang-btn .btn a {
+        font-size: 15px;
+        padding: 5px 10px;
+    }
+
+    .intro {
+        padding: 80px 5%;
+    }
+
+    .intro-title h1 {
+        font-size: 1.75em;
+    }
+
+    .intro-title p {
+        font-size: 1.125em;
+    }
+
+    .intro-info p {
+        font-size: 1em;
+        padding: 0 10% 20px;
+    }
+
+    .formulario {
+        padding: 0 15px;
+    }
+
+    .formulario input {
+        font-size: 1em;
+        max-height: 45px;
+        width: 100%;
+    }
+
+
+
+    /* NA TV */
+
+    .natv-container {
+        padding: 50px 5%;
+    }
+
+    .natv-descricao {
+
+        min-width: 250px;
+        flex: 1 1 250px;
+    }
+
+    .natv-img {
+        flex: 1 1 250px;
+        min-width: 250px;
+    }
+
+    /* off */
+
+    .off-txt, .mobile-txt {
+        margin-bottom: 30px;
+    }
+
+    .off-img {
+        min-width: 280px;
+    }
+
+    /* mobile */
+
+    .mobile-txt {
+        min-width: 280px;
+    }
+
+
+    /* PERGUNTAS */
+
+    .duvidas {
+        width: 100%;
+    }
+
+    .perguntas-container {
+        padding: 57px 0%;
+    }
+
+
+}
+
+
+@media (max-width: 514px) {
+
+    .footer-duvidas {
+        margin: 0 0;
+    }
+
+    .footer-container .lang-btn .lang {
+        margin: 10px 0;
+    }
+
+    #direitos {
+        margin: 24px 0 0;
+    }
+
+}
+
+
+
+
+@media (max-width: 500px) { 
+
+    .footer-duvidas {
+        margin: 0 0;
+    }
+
+    .footer-duvidas li {
+        width: 45%;
+    }
+
+    .footer-container .lang-btn .lang {
+        margin: 10px 0;
+    }
+
+    #direitos {
+        margin: 24px 0 0;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 380px) {
+
+    .natv-descricao {
+        min-height: 175px ;
+    }
+
+    /* OFF */
+
+    .off-img-barra {
+        min-width: 240px;
+        max-height: 65px;
+    }
+
+    .footer-container {
+        padding: 55px 30px 33px;
+    }
+
+
+}
+
+@media (max-width: 320px) {
+    body {
+        min-width: 320px;
+    }
+}

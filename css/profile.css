@@ -1,0 +1,160 @@
+@font-face {
+    font-family: NetFlixSans;
+    src: url(../font/NetflixSans.woff2);
+}
+
+
+* {
+    font-family: "NetFlixSans", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* INICIO  */
+
+body {
+    background: #141414;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+    width: 100%;
+    height: 68px;
+}
+
+header img {
+    max-width: 95px;
+}
+
+main {
+    margin: 0 20px;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titulo {
+    margin: 0 10px 30px -7px;
+}
+
+
+.titulo h1 {
+    color: white;
+    font-size: 3.5vw;
+    font-weight: normal;
+    text-align: center;
+}
+
+.imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.fotos-nomes {
+    margin-right: 2vw;
+}
+
+.fotos-nomes a img {
+    width: 10vw;
+    max-width: 200px;
+    min-width: 84px;
+    border: 2px solid transparent;
+    border-radius: 4px;
+}
+
+
+.fotos-nomes a p {
+    color: gray;
+    font-size: 1.3vw;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.fotos-nomes:hover a img  {
+    border-color: white;
+    background: white;
+}
+
+.fotos-nomes:hover a p {
+    color: white;
+}
+
+
+
+.btn {
+    margin-top: 90px;
+}
+
+.btn a {
+    color: gray;
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    border: 1px solid gray;
+    padding: .5em 1.5em ;
+}
+
+.btn a:hover {
+    color: white;
+    border: 1px solid white;
+}
+
+
+@media (max-width: 800px) {
+
+    .titulo h1 {
+        font-size: 30px;
+    }
+
+    .fotos-nomes a p {
+        font-size: 12px;
+
+    }
+}
+
+
+@media (max-width: 511px) {
+    .fotos-nomes {
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        margin-top: 75px;
+    }
+}
+
+
+
+@media (max-width: 319px) {
+    body {
+        min-width: 300px;
+    }
+
+    main {
+        margin: 50px 20px;
+    }
+}
